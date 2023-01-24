@@ -4,13 +4,21 @@
 
 profile = {"name" => "Ben",
 "location" => "Evanston",
-"status" => "Teaching"
+"status" => "Teaching",
+"timeline" => [
+    {"status" => "driving", "time" => "2:50 pm"},
+    {"status" => "Teaching", "time" => "4:50 pm"}
+]
 }
 
 puts profile
 
 # Hashes are lists of *key-value pairs*
 
+name = profile ["name"][0]
+puts name
+
+puts profile ["timeline"][0]["status"]
 # Accessing data from the hash
-puts profile ["name"]
+
 # More Complex Hashes
